@@ -82,7 +82,9 @@ class coin_change_sol:
 
 
 
-test = coin_change_sol()
+test_A = coin_change_sol()
+
+test_B = coin_change_sol(sol="List")
 
 
 
