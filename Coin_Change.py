@@ -18,6 +18,7 @@ class coin_change_sol:
         if money<0:
 
             return -1
+        
 
         if self.sol == "Dict":
 
@@ -49,11 +50,6 @@ class coin_change_sol:
 
 
         elif self.sol == "List":
-
-            if money == 0:
-
-                return 0
-
 
             min_sol_list = [money]*money
 
