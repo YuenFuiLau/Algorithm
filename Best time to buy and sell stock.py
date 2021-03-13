@@ -3,6 +3,7 @@ import numpy as np
 
 def inf_MaxProfit(prices):
 
+
     dp_i_0 = 0
     dp_i_1 = -max(prices)-5
 
@@ -18,9 +19,11 @@ def inf_MaxProfit(prices):
 
 
 
-
-
 def maxProfit(prices,k=2):
+
+    if len(prices) == 0:
+
+        return 0
 
 
     dp = np.zeros((len(prices),k+1,2))
@@ -57,7 +60,13 @@ a =  [3,3,5,0,0,3,1,4]
 
 b = [7,1,5,3,6,4]
 
+b = [3,2,6,5,0,3]
+
+c = []
+
 test = inf_MaxProfit(b)
+
+test_er = maxProfit(c)
 
 ans = maxProfit(a)
 
